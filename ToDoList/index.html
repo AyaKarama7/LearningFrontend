@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1>To Do List</h1>
+    <div class="main">
+        <div class="add">
+            <input type="text" placeholder="Title" id="title"></input>
+            <input type="text" placeholder="Description" id="description"></input>
+        </div>
+        <div class="btn">
+            <button onclick="Add()">Add</button>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search" id="term" onkeypress="Search()">
+                <i class="fas fa-search search-icon"></i>
+            </input>
+        </div>
+        <div class="list"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
